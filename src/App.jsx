@@ -9,7 +9,7 @@ function App() {
   
   useEffect(
     () => {
-      fetch("https://github.com/30049314/TruckReactApp/blob/main/src/data.json")
+      fetch("TruckReactApp/blob/main/src/data.json")
       .then(response => response.json())
       .then(data => setTrucks(data))
       .catch(error => console.error("Error loading data", error))
